@@ -105,7 +105,7 @@ data$party.2 <- NA
 data$party.2[data$party=="1. SPD"] <- "SPD"
 data$party.2[data$party=="2. CDU" | data$partei=="3. CSU"] <- "Union"
 data$party.2[data$party=="4. FDP"] <- "FDP"
-data$party.2[data$party=="5. Grüne"] <- "Grüne"
+data$party.2[data$party=="5. GrÃ¼ne"] <- "GrÃ¼ne"
 data$party.2[data$party=="6. Linke"] <- "Linke"
 data$party.2[data$party=="12. AfD"] <- "AfD"
 
