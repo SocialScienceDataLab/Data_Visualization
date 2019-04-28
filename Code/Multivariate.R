@@ -16,7 +16,7 @@ data$party <- NA
 data$party[data$partei=="1. SPD"] <- "SPD"
 data$party[data$partei=="2. CDU" | data$partei=="3. CSU"] <- "Union"
 data$party[data$partei=="4. FDP"] <- "FDP"
-data$party[data$partei=="5. Grüne"] <- "Grüne"
+data$party[data$partei=="5. GrÃ¼ne"] <- "GrÃ¼ne"
 data$party[data$partei=="6. Linke"] <- "Linke"
 data$party[data$partei=="12. AfD"] <- "AfD"
 
@@ -81,7 +81,7 @@ my.tab <- table(data$party.2, data$redist)
 rownames(my.tab) <- names(table(data$party))
 
 # Re-order Levels of Categorical Variable (Logically)
-data$party.ord <- factor(data$party, levels=c("Linke", "Grüne", "SPD", "Union", "FDP", "AfD"))
+data$party.ord <- factor(data$party, levels=c("Linke", "GrÃ¼ne", "SPD", "Union", "FDP", "AfD"))
 my.tab <- table(data$party.ord, data$redist)
 
 rownames(my.tab) <- names(table(data$party.ord))
@@ -336,7 +336,7 @@ parcoord(jitt.data[col.ord, rand], lwd=.3, col=data$col.code[col.ord], cex.axis=
 data$part.col <- NA
 data$part.col[data$party=="AfD"] <- brewer.pal(6, "Set1")[2]
 data$part.col[data$party=="FDP"] <- brewer.pal(6, "Set1")[6]
-data$part.col[data$party=="Grüne"] <- brewer.pal(6, "Set1")[3]
+data$part.col[data$party=="GrÃ¼ne"] <- brewer.pal(6, "Set1")[3]
 data$part.col[data$party=="Linke"] <- brewer.pal(6, "Set1")[4]
 data$part.col[data$party=="SPD"] <- brewer.pal(6, "Set1")[1]
 data$part.col[data$party=="Union"] <- "black"
