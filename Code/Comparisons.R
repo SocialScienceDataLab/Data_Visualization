@@ -140,7 +140,7 @@ my.col.d <- ifelse(data$Position=="Defender", "#E78AC3", "grey")
 my.col.m <- ifelse(data$Position=="Midfielder", "#A6D854", "grey")
 my.col.f <- ifelse(data$Position=="Forward", "#FFD92F", "grey")
 
-my.col.bay <- ifelse(data$Team=="FC Bayern München", "red", "grey")
+my.col.bay <- ifelse(data$Team=="FC Bayern MÃ¼nchen", "red", "grey")
 my.col.acf <- ifelse(data$Team=="ACF Fiorentina", "purple", "grey")
 
 
